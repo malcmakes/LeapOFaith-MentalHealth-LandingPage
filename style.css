@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+
+    /* background-color: rgb(242, 218, 120); */
+
+    /* background-color: #F9C74F */
+
+    background-image: url(./png/circles-background.png);
+    background-size: 140%;
+    
+
+
+
+}
+
+
+button {
+    font-family: 'Mukta', sans-serif;
+
+}
+
+/* Header Code */
+
+header {
+    
+    display: flex;
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+
+.logo-container {
+    flex:1;
+   
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+
+/* NAVIGATION Code */
+
+nav {
+    flex: 2;
+}
+
+
+.nav-links {
+    
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.nav-link {
+    
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: rgb(105, 90, 238);
+    margin: 3px;
+
+    transition: all 0.4s ease;
+}
+
+
+
+
+/* 
+.cart {
+    flex: 2;
+    justify-content: flex-end;
+    
+} */
+
+
+/* display main = presentation */
+
+.display-main {
+    /* background: blue; */
+
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+   
+
+}
+
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px);
+
+    
+}
+
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+
+
+.call-to-action {
+    padding: 50px 0px 0px 0px;
+}
+
+.btn-1, .btn-2 {
+
+    border-radius: 30px;
+}
+
+.btn-1 {
+    border: 2px solid rgb(157, 206, 255);
+    color: rgb(104, 62, 62);
+    /* background: transparent; */
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-2 {
+    background:rgb(250, 195, 129);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+
+
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+/* 
+.big-circle {
+   
+    z-index: -2;
+    position:absolute;
+    top: 0px;
+    right: 0;
+   
+    opacity: 0.5;
+    height: 80%;
+}
+
+
+ .medium-circle {
+     z-index: -1;
+     position: absolute;
+     top: 15%;
+    right: 30%; 
+     right: 70%;
+     opacity: 0.5;
+     height: 15%;
+} 
+
+.small-circle {
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    bottom: -10%;
+    left: 20%;
+    height: 20%;  
+} */
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERY for MOBILE VERSION (768px)  */
+
+@media screen and (max-width:768px){
+    body {
+      overflow-x: hidden;
+    }
+
+
+    .nav-links {
+        z-index: 10;
+        
+
+        position: absolute;
+        right:0px;
+        height: 92vh;
+        /* height: 100%; */
+        top: 8vh;
+        background-color: #43aa8b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        /* opacity: 95%; */
+
+    }
+
+  /* .nav-links li {  */
+        /* opacity: 0; 
+     }
+
+    /* header {
+        background-color: #43aa8b; 
+        width: 100%
+    } */
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    
+
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* MEDIA QUERY for MOBILE VERSION (1024px)  */
+
+
+@media screen and (max-width: 1024px) {
+    .display-main {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+
+    }
+
+    .intro-text h1 {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    .call-to-action {
+        padding: 10px 0px 0px 0px;
+    }
+
+
+    .small-circle, .medium-circle, .big-circle {
+        opacity: 0.2;
+    }
+
+  
+}

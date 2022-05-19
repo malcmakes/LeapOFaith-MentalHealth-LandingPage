@@ -1,6 +1,4 @@
-
 const navBurger = () => {
-
 
 const headerNew = document.querySelector('header')
 const burger = document.querySelector('.burger');
@@ -50,5 +48,10 @@ burger.addEventListener('click', () => {
 })
 
 }
+// navBurger()
 
-navBurger()
+export default navBurger
+
+
+
+

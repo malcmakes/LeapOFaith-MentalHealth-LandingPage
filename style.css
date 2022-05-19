@@ -14,10 +14,48 @@ body {
 
     background-image: url(./png/circles-background.png);
     background-size: 140%;
-    
+
+}
+
+.errors {
+    display: none;
+
+    background-color: hsl(0, 100%, 80%);
+    border-radius: .5rem;
+    padding: 10px;
+    color: hsl(0, 50%, 20%);
+    margin-bottom: 1rem;
+}
+
+.errors.show {
+    display: block;
+}
+
+#modal.open {
+    display: block;
+}
 
 
+#modal {
+    display: none;
+    background-color: rgb(253, 190, 190);
+    opacity: 98%;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+}
 
+#close-modal-btn {
+    float: right;
+    margin-bottom: 500px;
+}
+
+.form-group {
+    padding: 15px;
 }
 
 
@@ -167,37 +205,6 @@ nav {
     font-size: 22px;
 }
 
-/* 
-.big-circle {
-   
-    z-index: -2;
-    position:absolute;
-    top: 0px;
-    right: 0;
-   
-    opacity: 0.5;
-    height: 80%;
-}
-
-
- .medium-circle {
-     z-index: -1;
-     position: absolute;
-     top: 15%;
-    right: 30%; 
-     right: 70%;
-     opacity: 0.5;
-     height: 15%;
-} 
-
-.small-circle {
-    overflow: hidden;
-    z-index: -1;
-    position: absolute;
-    bottom: -10%;
-    left: 20%;
-    height: 20%;  
-} */
 
 
 /* --------------------------------------------------------------------------------------------------------------- */

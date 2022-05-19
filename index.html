@@ -24,9 +24,13 @@
     - Finish Logo and Hero Page illustrations [HAVE FUN!!!!]
 -->
 
-
 </head>
+<script type="module" src="./main.js"></script>
+
 <body>
+
+    <!-- Header and Navigation Section -->
+    <!------------------------------------------------------------------------ -->
 
     <header>
         <div class="logo-container">
@@ -35,7 +39,6 @@
             <h4 class="logo">Leap O Faith</h4>
 
         </div>
-
 
         <nav>
             <ul class="nav-links">
@@ -46,7 +49,6 @@
             </ul>
         </nav>
 
-
        <div class="burger">
            <div class="line1"></div>
            <div class="line2"></div>
@@ -54,30 +56,62 @@
            
        </div>
 
-
-<!-- 
-
-        <div class="cart">
-            <img src="./img/cart.svg" alt="">
-        </div> -->
-
     </header>
-
 
     <main>
 
+<!-- --------------------------------------------------------------------- -->
+        <div id="modal">
+            <form action="signup-verified.html" id="form">
+                
+                <button id="close-modal-btn">Close Modal</button>
+
+                <div class="errors">
+                    <h3 class="error-title">Error</h3>
+                    <ul class="errors-list">
+                    </ul>
+                  </div>
+
+                <h3>Sign Up</h3>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="password-confirmation">Password</label>
+                    <input type="password" id="password-confirmation" name="password-confirmation">
+                </div>
+
+                <div class="form-group">
+                    <label for="terms"></label>
+                    <input type="checkbox" id="terms" name="terms">
+                    Agree To Terms?
+                </div>
+
+                <button id="create-account-btn" type="submit">Create Account</button>
+
+            </form>
+        </div>
+<!-- --------------------------------------------------------------------- -->
         <section class="display-main">
             <div class="introduction">
                 <div class="intro-text">
+
                     <h1>Make the Leap O Faith</h1>
                     <p>Mental health services ready to help you take the next step forward.</p>
 
                 </div>
 
                 <div class="call-to-action">
-                    <button class="btn-1">Get Started</button>
+                    <button id="open-modal-btn-get-started" class="btn-1">Get Started</button>
                     <button class="btn-2">Login</button>
-
                 </div>
             </div>
 
@@ -85,16 +119,8 @@
                     <img src="./png/mainillustation-01ai.png" alt="">
 
             </div>
+
         </section>
-
-
-        <!-- <img class="big-circle" src="./png/big-circle.png" alt="">
-        <img class="medium-circle" src="./png/medium-circle.png" alt="">
-        <img class="small-circle" src="./png/small-circle.png" alt=""> -->
-
-
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>

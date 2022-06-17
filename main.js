@@ -30,7 +30,6 @@ closeModalBtnGS.addEventListener ('click', e => {
 // ----------------------------------------------------------------------------
 
 form.addEventListener('submit', e => {
-    
 
     const errorReports = []
     clearErrors()
@@ -50,7 +49,6 @@ form.addEventListener('submit', e => {
     if (errorReports.length > 0) {
         showErrors(errorReports)
         e.preventDefault()
-
     }
 })
 
@@ -61,7 +59,6 @@ function clearErrors () {
     errorsContainer.classList.remove("show")
 }
 
-
 function showErrors(errorReports) {
     errorReports.forEach(errorReport => {
         const li = document.createElement("li")
@@ -71,5 +68,4 @@ function showErrors(errorReports) {
     })
 
     errorsContainer.classList.add("show")
-
 }

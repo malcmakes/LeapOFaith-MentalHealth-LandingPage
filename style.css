@@ -1,26 +1,23 @@
+html { overflow-x: hidden; }
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+   
+    
 }
 
 body {
     font-family: 'Mukta', sans-serif;
-
-    /* background-color: rgb(242, 218, 120); */
-
-    /* background-color: #F9C74F */
-
     background-image: url(./png/circles-background.png);
     background-size: 140%;
-
 }
 
 .errors {
     display: none;
 
-    background-color: hsl(0, 100%, 80%);
+    background-color: hsl(17, 77%, 72%);
     border-radius: .5rem;
     padding: 10px;
     color: hsl(0, 50%, 20%);
@@ -35,29 +32,41 @@ body {
     display: block;
 }
 
-
 #modal {
     display: none;
-    background-color: rgb(253, 190, 190);
+    background-color: rgb(242, 246, 249);
     opacity: 98%;
-    height: 700px;
+
+   
     width: 100%;
     position: absolute;
     z-index: 1;
     margin: auto;
-    padding: 60px;
+
     text-align: center;
+    /* margin-bottom: 31.25em; */
+   
 }
+
+#modal, form {
+        margin-bottom: 31.25em;
+
+}
+
 
 #close-modal-btn {
     float: right;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
+    max-width: 3em;
+    padding-right: 1em;
+   
 }
+
+
 
 .form-group {
     padding: 15px;
 }
-
 
 button {
     font-family: 'Mukta', sans-serif;
@@ -82,7 +91,6 @@ header {
 
 .logo-container {
     flex:1;
-   
 }
 
 .logo {
@@ -96,18 +104,14 @@ nav {
     flex: 2;
 }
 
-
 .nav-links {
-    
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
-    
 }
 
 .nav-link {
-    
     color: black;
-    font-size: 18px;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -125,8 +129,6 @@ nav {
 }
 
 
-
-
 /* 
 .cart {
     flex: 2;
@@ -138,8 +140,6 @@ nav {
 /* display main = presentation */
 
 .display-main {
-    /* background: blue; */
-
     display: flex;
     width: 90%;
     margin: auto;
@@ -213,6 +213,8 @@ nav {
 @media screen and (max-width:768px){
     body {
       overflow-x: hidden;
+      background-size: 110%;
+      
     }
 
 
@@ -264,9 +266,6 @@ nav {
         }
     }
 
-    
-
-
     .toggle .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -280,14 +279,6 @@ nav {
     }
     
 }
-
-
-
-
-
-
-
-
 
 /* --------------------------------------------------------------------------------------------------------------- */
 /* MEDIA QUERY for MOBILE VERSION (1024px)  */

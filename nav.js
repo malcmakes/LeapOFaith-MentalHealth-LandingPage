@@ -14,12 +14,12 @@ burger.addEventListener('click', () => {
 
         headerNew.style.backgroundColor = "#43aa8b";
         headerNew.style.width = "100%";
-        console.log('background changed')
+        // console.log('background changed')
     }
 
         else {
             headerNew.style.backgroundColor = "transparent";
-            console.log('background normal')
+            // console.log('background normal')
         }
 
  
